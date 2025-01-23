@@ -1,22 +1,28 @@
-body{
-    background-image: url(../images/background2.jpg);
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
 }
 
-p{
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    opacity: 100%;
+@font-face {
+    font-family: "BreeSerif";
+    src: url(../font/BreeSerif-Regular.ttf) format('truetype');
+}
+
+h1 {
+    color: #346A82;
     text-align: center;
+    font-family:"BreeSerif";
 }
 
-.container{
+.container {
     position: relative;
     padding: 4px;
     border-radius: 8px;
-    background-color: white;
+    background-color: transparent;
     max-width: 400px;
     margin: auto;
     margin-top: 10%;
+    text-align: center;
 }
 
 .container::before {
@@ -26,9 +32,48 @@ p{
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 30%;
-    background-color: inherit;
-    opacity: 30%;
+    background-color:white;
     border-radius: inherit;
+    z-index: -1;
+    opacity: 55%;
 }
 
+input{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: large;
+    font-family: "BreeSerif";
+    color: #495c5d;
+}
+
+button{
+    width: 50%;
+    padding: 10px;
+    background-color: #495c5d;
+    color: white;
+    border: 1px;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: "BreeSerif";
+}
+
+button:hover{
+    background-color: #566d6e;
+}
+
+a{
+    font-family: "BreeSerif";
+    font-size: 20px;
+    color: #095c5d;
+}
+
+p{
+    font-family: "BreeSerif";
+    font-size: 20px;
+    color: #346A82;
+}
