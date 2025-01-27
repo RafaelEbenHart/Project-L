@@ -1,3 +1,7 @@
+.body{
+    background-image: url(../images/Backgroud3.jpg);
+    background-repeat: no-repeat;
+}
 body {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -9,7 +13,7 @@ body {
 }
 
 h1 {
-    color: #346A82;
+    color: #495c5d;
     text-align: center;
     font-family:"BreeSerif";
 }
@@ -59,7 +63,7 @@ button{
     font-size: 20px;
     cursor: pointer;
     margin-bottom: 20px;
-    font-family: "BreeSerif";
+    font-family:"BreeSerif";
 }
 
 button:hover{
@@ -75,5 +79,73 @@ a{
 p{
     font-family: "BreeSerif";
     font-size: 20px;
-    color: #346A82;
+    color: #495c5d;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-left: 45%;
+}
+
+a.bar{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+    white-space: nowrap;
+    position: relative;
+    font-family:"BreeSerif";
+}
+
+a.bar:hover{
+    color: gray;
+}
+
+.garis{
+   position: relative;
+}
+
+.garis::before{
+    position: absolute;
+    content: " ";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-bottom:2px solid white;
+    margin-bottom: 30px;
+    margin-left: 40%;
+    width: 45%;
+}
+
+.login-button{
+    border: none;
+    color: #495c5d;
+    cursor: pointer;
+    background-color: white;
+    margin-left: 160px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-family:"BreeSerif";
+}
+
+.login-button:hover{
+    background-color: gray;
+}
+
+.menu-button{
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-bottom: 2px;
+    margin-left: 10px;
+}
+
+.row-button{
+    display: flex;
+}
+
+.menu-button:hover{
+    background-color: gray;
 }
