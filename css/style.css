@@ -1,10 +1,14 @@
 .body{
     background-image: url(../images/Backgroud3.jpg);
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 body {
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -128,6 +132,7 @@ a.bar:hover{
     margin-right: 50px;
     border-radius: 5px;
     font-family:"BreeSerif";
+    margin-top: 5px;
 }
 
 .login-button:hover{
@@ -140,6 +145,7 @@ a.bar:hover{
     cursor: pointer;
     padding-bottom: 2px;
     margin-left: 10px;
+    margin-top: 5px;
 }
 
 .row-button{
@@ -212,4 +218,73 @@ h1.center{
     font-size: 200px;
     mask-image: linear-gradient(transparent, #495c5d 20%, #495c5d 55%, transparent 85%);
     -webkit-mask-image: linear-gradient(transparent, #495c5d 20%, #495c5d 55%, transparent 85%);
+}
+
+.bottomsplash{
+    background-image: url(../images/landscapegroup3.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    min-height: 105vh;
+    margin-left: 70px;
+    margin-top: 10%;
+    overflow: visible;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+}
+
+h1.whitebottomcolumn{
+    color: white;
+    max-width: 100%;
+    font-size: 60px;
+    margin-top: 50%;
+    font-family:"BreeSerif";
+}
+
+.login-button-splash-bottom{
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    color: #495c5d;
+    font-family:"BreeSerif";
+    margin-bottom: 50%;
+}
+
+.login-button-splash-bottom:hover{
+    background-color: gray;
+}
+
+.bottomcontainer{
+    background-color:#1B2222;
+    max-width: 100%;
+    max-width: 100%;
+    min-height: 50vh;
+    background-size: cover;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.bottomText{
+    color: white;
+    font-family:"BreeSerif";
+    text-align: start;
+    font-size: larger;
+}
+.bottomColumn{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+a.bottomText{
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+a.bottomText:hover{
+    color: gray;
 }
