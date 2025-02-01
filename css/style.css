@@ -1,14 +1,24 @@
-.body{
+.body-splash{
     background-image: url(../images/Backgroud3.jpg);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    background-size: cover;
 }
-body {
+.body-login{
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    background-size: cover;
+}
+
+.body-signup{
+    background-image: url(../images/background2.webp);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
 }
 
 @font-face {
@@ -221,7 +231,7 @@ h1.center{
 }
 
 .bottomsplash{
-    background-image: url(../images/landscapegroup3.png);
+    background-image: url(../images/landscapegroup.png);
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
