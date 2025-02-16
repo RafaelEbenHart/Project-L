@@ -1,0 +1,26 @@
+[
+    {
+        "image":"../images/dataimage1.jpg",
+        "location":"Landscape - Indonesia",
+        "name":"Danau Beratan Begudul",
+        "icon":"fa fa-star",
+        "rate":"4.9",
+        "statusRate":"Most Visited"
+    },
+    {
+        "image":"../images/dataimage2.jpg",
+        "location":"Landscape - Indonesia",
+        "name":"Danau Beratan Begudul",
+        "icon":"fa fa-star",
+        "rate":"4.9",
+        "statusRate":"Most Visited"
+    },
+    {
+        "image":"../images/dataimage3.jpg",
+        "location":"Landscape - Indonesia",
+        "name":"Danau Beratan Begudul",
+        "icon":"fa fa-star",
+        "rate":"4.9",
+        "statusRate":"Most Visited"
+    }
+]
