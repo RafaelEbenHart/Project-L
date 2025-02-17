@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Screen</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../script/script.js"></script>
+    <script defer src="../script/script.js">""</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class = "body-main">
-    <!-- <div class = "topContainer">
+    <div class = "topContainer">
         <button type="button" class="menu-button"><img src="../images/menu_icon.jpg" style="width: 30px;" height="20px"></button>
 
         <div class="row">
@@ -18,9 +18,47 @@
             <a href="support.html" class="bar">Support</a>
             <a href="contact.html" class="bar">Contact</a>
         </div>
-    </div> -->
+    </div>
+
     <div class ="bodyContainer">
-        <div id="card-container" class="domesticRow"></div>
+        <img src="../images/testSlide.jpg">
+        <label for = "Search"></label>
+        <input type="text" id="Search" name="Search" placeholder="Search Landscape" class="searchBar">
+
+        <h1 class="h1-tittle">Domestic</h1>
+        <div id="cardDomestic" class="LRow"></div>
+        <h1 class="h1-tittle">International</h1>
+        <div id="cardInternational" class="LRow"></div>
+        <h1 class="h1-tittle">Come to visit</h1>
+        <div id="cardVisit" class="LRow"></div>
+        <button type="button" class="button-seeAll" onclick="">See All</button>
+    </div>
+
+    <div class="bottomcontainer">
+        <div class="bottomColumn">
+            <h1 class="bottomText">Follow us</h1>
+            <a class="bottomText" href="">Instagram</a>
+            <a class="bottomText" href="">X</a>
+            <a class="bottomText" href="">Facebook</a>
+        </div>
+
+        <div class="bottomColumn">
+            <h1 class="bottomText">Support</h1>
+            <a class="bottomText" href="cs.html">Costumer Service</a>
+        </div
+        >
+        <div class="bottomColumn">
+            <h1 class="bottomText">Policy</h1>
+            <a class="bottomText" href="privacy.html">Privacy</a>
+            <a class="bottomText" href="cookie.html">Cookie</a>
+        </div>
+
+        <div class="bottomColumn">
+            <h1 class="bottomText">Explore</h1>
+            <a class="bottomText" href="homestay.html">Homestay</a>
+            <a class="bottomText" href="location.htnml">Location</a>
+            <a class="bottomText" href="flightguide.html">Flight Guide</a>
+        </div>
     </div>
 </body>
 </html>

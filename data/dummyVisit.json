@@ -1,0 +1,14 @@
+[
+    {
+        "image":"../images/visit1.jpg",
+        "name":"Indonesia"
+    },
+    {
+        "image":"../images/visit2.jpg",
+        "name":"Japan"
+    },
+    {
+        "image":"../images/visit3.jpg",
+        "name":"USA"
+    }
+]

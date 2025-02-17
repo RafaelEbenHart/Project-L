@@ -1,33 +1,53 @@
-fetch("../data/dummy.json")
-    .then(response => response.json())
-    .then(data => displayCards(data))
-    .catch(error => console.error("Error:", error));
+const jsonFiles = [
+    { file: "../data/dummyInternational.json", containerId: "cardInternational" },
+    { file: "../data/dummyDomestic.json", containerId: "cardDomestic" },
+    { file: "../data/dummyVisit.json", containerId: "cardVisit" }
+];
 
-function displayCards(data) {
-    const container = document.getElementById("card-container");
+function fetchAndDisplayData({ file, containerId }) {
+    fetch(file)
+        .then(response => response.json())
+        .then(data => displayCards(data, containerId))
+        .catch(error => console.error(`Error fetching ${file}:`, error));
+}
+
+function displayCards(data, containerId) {
+    const container = document.getElementById(containerId);
 
     if (!container) {
-        console.error("Elemen #card-container tidak ditemukan!");
+        console.error(`Elemen #${containerId} tidak ditemukan!`);
         return;
     }
 
     data.forEach(item => {
         const card = document.createElement("div");
-        card.classList.add("card");
 
-        card.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
-        <h3>${item.location}</h3>
-        <p>${item.name}</p>
-        <span>
-            <i class="${item.icon}"></i>
-            <p>${item.rate}</p>
-            <p>${item.statusRate}</p>
-        </span>
-        `;
+        if (containerId === "cardVisit") {
+            card.classList.add("cardVisit");
+            card.innerHTML = `
+            <div class="visitContainer">
+                <img src="${item.image}" alt="${item.name}">
+                <div class="overlay">
+                    <p>${item.name}</p>
+                </div>
+            </div>
+            `;
+        } else {
+            card.classList.add("card");
+            card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <h3>${item.location}</h3>
+            <p>${item.name}</p>
+            <span>
+                <i class="${item.icon}"></i>
+                <p>${item.rate}</p>
+                <p>${item.statusRate}</p>
+            </span>
+            `;
+        }
 
         container.appendChild(card);
     });
 }
 
-
+jsonFiles.forEach(fetchAndDisplayData);
