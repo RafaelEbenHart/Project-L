@@ -38,7 +38,7 @@ function displayCards(data, containerId) {
             <img src="${item.image}" alt="${item.name}">
             <h3>${item.location}</h3>
             <p>${item.name}</p>
-            <span>
+            <span class="card-span">
                 <i class="${item.icon}"></i>
                 <p>${item.rate}</p>
                 <p>${item.statusRate}</p>
@@ -46,8 +46,13 @@ function displayCards(data, containerId) {
             `;
         }
 
+        card.addEventListener("click",function(){
+            window.location.href=`detail.html?id=${item.id}`;
+        });
+
         container.appendChild(card);
     });
+
 }
 
 jsonFiles.forEach(fetchAndDisplayData);

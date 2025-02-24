@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Main Screen</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="../script/script.js">""</script>
+    <script src="../script/script.js">""</script>
+    <script src="../script/menuScript.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class = "body-main">
     <div class = "topContainer">
-        <button type="button" class="menu-button"><img src="../images/menu_icon.jpg" style="width: 30px;" height="20px"></button>
-
+        <button type="button" id="menu-button" class="menu-button"><img src="../images/menu_icon.jpg" style="width: 30px;" height="20px"></button>
         <div class="row">
             <a href="blog.html" class="bar">Blog</a>
             <a href="about-us.html" class="bar">About Us</a>
@@ -21,16 +21,32 @@
     </div>
 
     <div class ="bodyContainer">
-        <img src="../images/testSlide.jpg">
+        <div class="scroll-display-container">
+            <img src="../images/display1.jpg">
+            <img src="../images/display2.jpg">
+            <img src="../images/display3.jpg">
+        </div>
         <label for = "Search"></label>
         <input type="text" id="Search" name="Search" placeholder="Search Landscape" class="searchBar">
 
         <h1 class="h1-tittle">Domestic</h1>
-        <div id="cardDomestic" class="LRow"></div>
+
+        <div class="scroll-container">
+            <div id="cardDomestic" class="LRow"></div>
+        </div>
+
         <h1 class="h1-tittle">International</h1>
-        <div id="cardInternational" class="LRow"></div>
+
+        <div class="scroll-container">
+            <div id="cardInternational" class="LRow"></div>
+        </div>
+
         <h1 class="h1-tittle">Come to visit</h1>
-        <div id="cardVisit" class="LRow"></div>
+
+        <div class="scroll-container-visit">
+            <div id="cardVisit" class="LRow"></div>
+        </div>
+
         <button type="button" class="button-seeAll" onclick="">See All</button>
     </div>
 

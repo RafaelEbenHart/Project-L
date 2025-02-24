@@ -1,26 +1,48 @@
 [
     {
+        "id":"domestic001",
         "image":"../images/dataimage1.jpg",
         "location":"Landscape - Indonesia",
         "name":"Danau Beratan Begudul",
         "icon":"fa fa-star",
         "rate":"4.9",
-        "statusRate":"Most Visited"
+        "statusRate":"Most Visited",
+        "area":"Bali",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi sem. Sed varius massa at sapien consequat tincidunt. Cras pellentesque posuere  augue, quis interdum nibh mattis condimentum. Ut ullamcorper augue at maximus molestie."
     },
     {
+        "id":"domestic002",
         "image":"../images/dataimage2.jpg",
         "location":"Landscape - Indonesia",
         "name":"Danau Beratan Begudul",
         "icon":"fa fa-star",
         "rate":"4.9",
-        "statusRate":"Most Visited"
+        "statusRate":"Most Visited",
+        "area":"Bali",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi sem. Sed varius massa at sapien consequat tincidunt. Cras pellentesque posuere  augue, quis interdum nibh mattis condimentum. Ut ullamcorper augue at maximus molestie."
     },
     {
+        "id":"domestic003",
         "image":"../images/dataimage3.jpg",
         "location":"Landscape - Indonesia",
         "name":"Danau Beratan Begudul",
         "icon":"fa fa-star",
         "rate":"4.9",
-        "statusRate":"Most Visited"
+        "statusRate":"Most Visited",
+        "area":"Bali",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi sem. Sed varius massa at sapien consequat tincidunt. Cras pellentesque posuere  augue, quis interdum nibh mattis condimentum. Ut ullamcorper augue at maximus molestie."
     }
+    ,
+    {
+        "id":"domestic004",
+        "image":"../images/dataimage3.jpg",
+        "location":"Landscape - Indonesia",
+        "name":"Danau Beratan Begudul",
+        "icon":"fa fa-star",
+        "rate":"4.9",
+        "statusRate":"Most Visited",
+        "area":"Bali",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae mi sem. Sed varius massa at sapien consequat tincidunt. Cras pellentesque posuere  augue, quis interdum nibh mattis condimentum. Ut ullamcorper augue at maximus molestie."
+    }
+
 ]

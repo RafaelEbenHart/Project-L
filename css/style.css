@@ -27,10 +27,67 @@
     padding: 0;
 }
 
+.body-detail{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: "BreeSerif";
     src: url(../font/BreeSerif-Regular.ttf) format('truetype');
 }
+
+#menu-button {
+    position: absolute;
+    left: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#menu-button.hidden{
+    display: none;
+}
+
+#menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -255px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+
+#menu-sidebar.active {
+    left: 0;
+}
+
+#menu-sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    color: #495c5d;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#menu-sidebar a:hover {
+    background: gray;
+}
+
+#menu-sidebar a i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
 
 /* essential */
 
@@ -306,7 +363,7 @@ a.bottomText:hover{
 
 /* splash */
 
-span{
+.card span{
     display: flex;
     gap: 10px;
     align-items: center;
@@ -315,7 +372,7 @@ span{
 
 .LRow{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 15px;
     justify-content: center;
     align-items: center;
@@ -374,12 +431,8 @@ span{
 
 .h1-tittle{
     color: #1B2222;
-    margin-right: 21%;
+    margin-right: 40%;
     font-size: 30px;
-}
-
-.cardVisit{
-
 }
 
 .cardVisit img{
@@ -428,4 +481,129 @@ span{
 
 .button-seeAll:hover{
     background-color: gray;
+}
+
+.scroll-display-container {
+    width: 1440px;
+    height: 600px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    gap: 10px;
+  }
+
+.scroll-container{
+    width: 780px;
+    height: 330px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    place-items: center;
+    padding-left: 310px;
+    box-sizing: border-box;
+}
+
+.scroll-container-visit{
+    width: 780px;
+    height: 380px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    place-items: center;
+    padding-left: 310Px;
+    box-sizing: border-box;
+}
+
+/* main */
+
+.container-background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    height: 150vh;
+    place-content: center;
+    place-items: center;
+}
+
+.container-background::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, transparent 50%, white 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 50%, white 100%);
+}
+
+#place-image{
+    height: 650px;
+    width: 650px;
+    border-radius: 28px;
+}
+
+.container-background img,
+.container-background span,
+.container-background p {
+    position: relative;
+    z-index: 1;
+}
+
+.detail-span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#place-name,#place-rate,#place-location{
+    color: #1B2222;
+    text-align: left;
+}
+
+#place-icon{
+    color: gold;
+}
+
+.back-button{
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: #495c5d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    justify-content: center;
+    place-items: center;
+}
+
+.detail-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.detail-grid h1{
+    color: #1B2222;
+    font-size: 30px;
+    margin: 0;
+}
+
+.detail-grid p{
+    color: #1B2222;
+    font-size: 25px;
+    text-align: justify;
+    margin: 0;
+    width: 400px;
 }

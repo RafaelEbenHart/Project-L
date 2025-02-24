@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../script/detailScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="body-detail">
+    <div id="detail-container">
+        <div id="container-background" class="container-background">
+            <button onclick="goBack()" class="back-button"><img src="../images/backIcon.png" alt="back" style="width: 20px; height: 20px;"></button>
+            <img id="place-image" src="" alt="">
+            <span class="detail-span">
+                <h1 id="place-name"></h1>
+                <i id="place-icon"></i>
+                <p id="place-rate"></p>
+            </span>
+            <p id="place-location"></p>
+        </div>
+
+        <div class="detail-grid">
+            <h1>Location :</h1>
+            <p id="place-area"></p>
+       </div>
+
+       <div class="detail-grid">
+            <h1>Decription :</h1>
+            <p id="place-description"></p>
+       </div>
+
+    </div>
+</body>
+</html>
