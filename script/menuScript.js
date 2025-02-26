@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <a href="upload.html"> <i class="fa fa-camera"> </i> <span>upload</span> </a>
         <a href="Yours.html"> <i class="fa fa-archive"> </i> <span>Your Landscape</span> </a>
         <a href="Setting.html"> <i class="fa fa-gear"> </i> <span>Setting</span> </a>
-        <a href="splash.html"> <i class="fa fa-paint-brush"> </i> <span>Splash</span> </a>
+        <a href="../index.html"> <i class="fa fa-paint-brush"> </i> <span>Splash</span> </a>
     `;
 
     document.body.appendChild(menuSidebar);
